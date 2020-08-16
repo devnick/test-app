@@ -1,5 +1,10 @@
 name: Docker Image CI
 
+defaults:
+  run:
+    shell: bash
+    working-directory: application
+
 on:
   push:
     branches: [master]
@@ -7,10 +12,6 @@ on:
     branches: [master]
 
 jobs:
-  defaults:
-    run:
-      shell: bash
-      working-directory: application
   build:
     runs-on: ubuntu-latest
 
