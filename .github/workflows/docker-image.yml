@@ -8,9 +8,9 @@ on:
 
 jobs:
   defaults:
-  run:
-    shell: bash
-    working-directory: application
+    run:
+      shell: bash
+      working-directory: application
   build:
     runs-on: ubuntu-latest
 
